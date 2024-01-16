@@ -1,0 +1,81 @@
+body{
+    background: rgb(129,214,219);
+    background: radial-gradient(circle, rgba(129,214,219,1) 0%, rgba(58,52,92,1) 100%);
+    font-family: 'Salsa', cursive;
+    text-align: center;
+}
+.container{
+    background-image: url(https://www.loogun.com/img/hero_bg.jpg);
+    background-position: center;
+   margin-left: 240px;
+   padding: 10px;
+   height: 900px;
+   width: 800px;
+}
+#title{
+    color: white;
+    font-size: 60px;
+    font-family: 'Rubik Maps', system-ui;
+}
+#description{
+    color: white;
+    font-size: 30px;
+    font-family: 'PT Serif', serif;
+}
+form{
+    max-width: 500px;
+    margin: 50px auto;
+    padding: 30px 20px;
+}
+.form-control{
+    text-align: left;
+    margin-bottom: 10px;
+}
+#options{
+    text-align: left;
+}
+.form-control label{
+    display: inline-block;
+    margin-bottom: 2px;
+}
+#survey-form #email-label{
+    float: none;
+}
+button{
+    cursor: pointer;
+    display: block;
+    float: left;
+    border-radius: 15px;
+    width: 100px;
+    height: 40px;
+    margin-top: 10px;
+    font-size: 17px;
+}
+.form-control input,
+        .form-control select,
+        .form-control textarea{
+            border-radius: 15px;
+            display: inline-block;
+            width: 200px;
+            height: 20%;
+            border: 2px solid;
+            font-size: large;
+        }
+        .form-control input[type="radio"],
+        .form-control input[type="checkbox"]{
+            vertical-align: middle;
+            display: inline-block;
+            width: auto;
+            box-sizing: inherit;
+        }
+#name{
+    clear: left;
+}
+#email{
+    box-sizing: inherit;
+}
+
+
+
+
+

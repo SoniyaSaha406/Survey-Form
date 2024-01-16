@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Survey Form</title>
+    <link rel="stylesheet" href="./style.css" />
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Salsa&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Rubik+Maps&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+<body>
+    <h1 id="title">freeCodeCamp Survey Form</h1>
+    <p id="description">Thank you for taking the time to help us improve the platform</p>
+    <div class="container">
+    <form id="survey-form">
+        <div class="form-control">
+            <label for="name" id="name-label">Your Name:</label><br/>
+        <input id="name" type="text" placeholder="Enter your name" required="name" />
+        </div>
+        <div class="form-control">
+            <label for="email" id="email-label">Email Address:</label><br/>
+        <input id="email" type="email" placeholder="Enter your email" required="email"/>
+        </div>
+        <div class="form-control">
+            <label for="number" id="number-label">Age:</label><br/>
+        <input id="number" type="number" placeholder="Enter your number" min="10" max="70"/>
+        </div>
+        <div class="form-control">
+            <label for="select">Which option best describes you?</label><br/>
+        <select id="dropdown" name="role">
+            <option value="none">None</option>
+            <option value="student">Student</option>
+            <option value="intern">Intern</option>
+            <option value="professional">Professional</option>
+            <option value="other">Other</option>
+        </select>
+        </div> 
+        <div class="form-control">
+            <label>Would you recommend freeCodeCamp to a friend for coding practice?</label>
+            <div id="radio-buttons">
+                <label for="recommend-yes">
+                <input type="radio" id="recommend-yes" name="recommend" value="yes"/>Yes</label><br/>
+                <label for="recommend-no">
+                <input type="radio" id="recommend-no" name="recommend" value="no"/>No</label><br/>
+                <label for="recommend-maybe">
+                <input type="radio" id="recommend-maybe" name="recommend" value="maybe"/>Maybe</label><br/>
+            </div>
+        </div>
+        <div class="Checkbox">
+            <label> Which Software do you use for web dev projects? 
+                <small>(Check all that apply)</small>
+            </label>
+            <div id="options">
+            <label for="Front-end Projects">
+            <input type="checkbox" name="inp" value="Front-end Projects"/>Front-end Projects</label><br/>
+            <label for="Back-end Projects">
+            <input type="checkbox" name="inp" value="Back-end Projects"/>Back-end Projects </label><br/>
+            <label for="Data Visualization">
+            <input type="checkbox" name="inp" value="Data Visualization"/>Data Visualization</label><br/>
+            <label for="Open Source Community">
+            <input type="checkbox" name="inp" value="Open Source Community"/>Open Source Community</label><br/>
+            <label for="Additional Courses">
+            <input type="checkbox" name="inp" value="Additional Courses"/>Additional Courses</label>
+            </div>
+        </div>
+        <div class="form-control">
+            <label for="comment">Do you have any feedback or suggestions for the curriculum?</label><br/>
+            <textarea id="comment" name="comment" rows="7" cols="50" placeholder="Enter your comment here"></textarea>
+        </div>
+        <button id="submit" type="submit" value="submit">Submit</button>
+        
+    </form>
+    </div>
+</body>
+</html>
